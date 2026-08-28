@@ -54,10 +54,10 @@ button:hover {
     background-color: #e85a2a;
 }
 .food img {
-    width: 100%;
-    height: auto;
-    max-height: 80px;
-    object-fit: contin;
+    width: 100% !important;
+    height: 80px !important;
+    max-height: 80px !important;
+    object-fit: cover !important;
     border-radius: 10px;
     display: block;
 }

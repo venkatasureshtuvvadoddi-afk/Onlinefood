@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Food Login</title>
+
+    <style>
+        body {
+            background-color: green;
+            font-family: Arial;
+        }
+
+        .login-box {
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 15px gray;
+            text-align: center;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>Online Food Login</h1>
+
+        <form action="index.html">
+            <input type="text" placeholder="Username">
+
+            <input type="password" placeholder="Password">
+
+            <button type="botton"
+onclick="login">Login</button>
+<p>
+    Don't have an account?
+    <a href="signup.html">Create Account</a>
+</p>
+        </form>
+
+    </div>
+<script>
+function login() {
+    var username = document.querySelector('input[type="text"]').value;
+    var password = document.querySelector('input[type="password"]').value;
+
+    if (username === "admin" && password === "12345") {
+        alert("Login Successful!");
+        window.location.href = "index.html";
+    } else {
+        alert("Wrong Username or Password!");
+    }
+}
+</script>
+
+</body>
+</html>

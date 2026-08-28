@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+
+    <style>
+        body {
+            background-color: lightgreen;
+            font-family: Arial;
+        }
+
+        .signup-box {
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 15px gray;
+            text-align: center;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-box">
+
+        <h1>Create Account</h1>
+
+        <input type="text" placeholder="Full Name">
+
+        <input type="email" placeholder="Email">
+
+        <input type="text" placeholder="Username">
+
+        <input type="password" placeholder="Password">
+
+        <button type="button"
+onclick="createAccount()">CreateAccount</button>
+
+    </div>
+<script>
+function createAccount() {
+    alert("Account Created Successfully!");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

@@ -49,32 +49,32 @@
 
 <body>
 
-    <div class="login-box">
+<div class="login-box">
 
-        <h1>Online Food Login</h1>
+    <h1>Online Food Login</h1>
 
-        <form action="index.html">
-            <input type="text" placeholder="Username">
+    <input type="text" id="username" placeholder="Username">
 
-            <input type="password" placeholder="Password">
+    <input type="password" id="password" placeholder="Password">
 
-            <button type="botton"
-onclick="login">Login</button>
-<p>
-    Don't have an account?
-    <a href="signup.html">Create Account</a>
-</p>
-        </form>
+    <button type="button" onclick="login()">Login</button>
 
-    </div>
+    <p>
+        Don't have an account?
+        <a href="signup.html">Create Account</a>
+    </p>
+
+</div>
+
 <script>
 function login() {
-    var username = document.querySelector('input[type="text"]').value;
-    var password = document.querySelector('input[type="password"]').value;
+
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
     if (username === "admin" && password === "12345") {
         alert("Login Successful!");
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     } else {
         alert("Wrong Username or Password!");
     }
